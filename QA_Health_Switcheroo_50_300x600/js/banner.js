@@ -41,9 +41,11 @@ function initCSS() {
 
 
     TweenLite.set(".bg-wrapper", {perspective:800});
-    TweenLite.set(".back", {rotationY:180, });
+    TweenLite.set(".back", {rotationY:180 });
+    TweenLite.set(".bg-image-02", {rotationY:180 });
     TweenLite.set([".back", ".front"], {backfaceVisibility:"hidden", transformStyle:"preserve-3d"});
-    TweenLite.set("#messaging-frame-02 p", {rotationY:180});
+    TweenLite.set(".back", {rotationY:0});
+    TweenLite.set("#messaging-frame-02 p", {rotationY:0, zIndex:1000});
 
     $( ".banner" ).hover(
         function() {
